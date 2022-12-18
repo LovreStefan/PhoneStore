@@ -1,0 +1,317 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family:'Montserrat', sans-serif;
+}
+.navbar{
+    background-color: black;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    z-index: 1;
+    
+    
+}
+
+.navbar h1{
+    
+    color: white;
+    font-size: 80px;
+    padding: 20px 20px;
+
+    
+}
+
+.navbar .nav-item{
+    
+    color: white;
+    font-weight: bold;
+    font-size: 35px;
+    display: inline;
+    
+    padding: 10px 25px;
+    transition: 0.3s ease-in-out;
+    margin: 0px 30px;
+
+}
+
+.navbar .nav-item a{
+    text-decoration: none;
+    color: white;
+    transition: 0.3s ease-in-out;
+    
+}
+.navbar .nav-item a:hover{
+    color: orange;
+}
+
+
+
+ .box {
+    width: 100%;
+    height: 800px;
+    background-color: #14213d;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+ }
+ .box .naslov{
+    
+    font-size: 30px;
+    margin: 20px 20px;
+    text-align: center;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    
+ }
+
+
+ .box .slika  {
+    background-color: white;
+    width: 100%;
+    height: 500px;
+    border-radius: 1cm;
+    border: 1px solid black;
+    padding: 20px;
+    margin:  20px 20px ;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+
+}
+.box .slika:hover{
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    
+    transform: translateY(-25px);
+}
+ .box .slika p{
+   
+    color: black;
+    width: 100%;
+    font-weight: bold;
+    background-color: orange;
+    border: 2px solid orange;
+    height: 50px;
+    font-size: 30px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.marke{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.marke .pic img{
+    display: flex;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+}
+.dostava{
+    background-color: #14213d;
+    color: white;
+    width: 100%;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+
+}
+.dostava img{
+    width: 40%;
+    height: 450px;
+    border-radius: 1cm;
+    
+}
+.kamion{
+    width: 100%;
+    height: 200px;
+    background-color: #14213d;
+}
+ .kamion img{
+
+    width: 15%;
+    
+    position: absolute;
+    animation-name: test;
+    animation-duration: 5s;
+    animation-iteration-count:infinite;
+    animation-direction:alternate-reverse;
+}
+@keyframes test{
+    0%{
+        right: 10%;
+    }
+
+    100%{
+        right: 80%;
+
+    }
+
+}
+
+.dostava .dostava-text{
+    text-align: justify;
+    width: 40%;
+    
+}
+.dostava .dostava-text h2{
+    font-size: 35px;
+    
+}
+
+.original{
+    width: 100%;
+    height: 800px;
+    background-color: #14213d;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.original .original-text{
+    text-align: justify;
+    width: 40%;
+}
+.original img{
+    width: 40%;
+    height: 500px;
+    border-radius: 1cm;
+}
+.futer{
+    background-color: black;
+    color: orange;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (min-width: 320px) and (max-width: 420px){
+
+    
+        .navbar{
+            display: block;
+            align-items: center;
+            justify-content: center;
+            height: 120px;
+            padding: 0px;
+            
+        }
+        .navbar h1{
+            font-size: 25px;
+            padding: 0px;
+            margin: 0px;
+            text-align: center;
+        }
+        .navbar .nav-item{
+            font-size: 15px ;
+            padding: 3px;
+            margin: 0px;
+            display: block;
+            text-align: center;
+         }
+        .navbar ul{
+            padding: 0px;
+        }
+        
+            
+           
+        
+    .box{
+        display: block;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        
+    }
+    .box .naslov{
+        font-size: 15px;
+        margin: 0px 20px;
+    }
+    .box .slika{
+        width: 70%;
+        height: 350px;
+        margin: 0px auto;
+        
+        
+    }
+    .box .slika img{
+        height: 250px;
+        width: 250px;
+    }
+    .marke{
+        display: block;
+        padding: 0px;
+        
+    }
+    .marke .pic img{
+        height: 100px;
+        width: 100px;
+    }
+    .kamion img{
+        height: 150px;
+        width: 150px;
+        
+        position: absolute;
+    animation-name: test;
+    animation-duration: 3s;
+    animation-iteration-count:infinite;
+    animation-direction:alternate-reverse;
+        }
+@keyframes test{
+    0%{
+        right: 10%;
+    }
+
+    100%{
+        right: 50%;
+
+    }
+    }
+    .dostava{
+        display: block;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        padding: 0px;
+    }
+    .dostava .dostava-text{
+        width: 100%;
+    }
+    .dostava img{
+        width: 100%;
+        margin: 20px auto ;
+        
+        
+    }
+    .original{
+        display: block;
+        height: 100%;
+        padding: 0px;
+
+    }
+    .original .original-text{
+        width: 100%;
+        
+    }
+    .original img{
+        width: 100%;
+    }
+    }   

@@ -1,0 +1,149 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family:'Montserrat', sans-serif;
+}
+
+.navbar{
+    background-color: black;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    z-index: 1;
+    
+    
+}
+
+.navbar h1{
+    
+    color: white;
+    font-size: 80px;
+    padding: 20px 20px;
+
+    
+}
+
+.navbar .nav-item{
+    
+    color: white;
+    font-weight: bold;
+    font-size: 35px;
+    display: inline;
+    
+    padding: 10px 25px;
+    transition: 0.3s ease-in-out;
+    margin: 0px 30px;
+
+}
+
+.navbar .nav-item a{
+    text-decoration: none;
+    color: white;
+    transition: 0.3s ease-in-out;
+    
+}
+.navbar .nav-item a:hover{
+    color: orange;
+}
+.proizvodi{
+    width: 100%;
+    padding: 50px 0px;
+    background-color: #14213d;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.proizvodi .slika{
+    background-color: white;
+    width: 100%;
+    height: 500px;
+    border-radius: 1cm;
+    border: 1px solid black;
+    padding: 20px ;
+    margin:  20px 20px ;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+}
+.proizvodi .slika:hover{
+    
+    transform: translateY(-25px);
+}
+.proizvodi .slika p{
+    color: black;
+    width: 100%;
+    font-weight: bold;
+    background-color: orange;
+    border: 2px solid orange;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.futer{
+    background-color: black;
+    color: orange;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (min-width: 320px) and (max-width: 420px){
+
+    .navbar{
+        display: block;
+        align-items: center;
+        justify-content: center;
+        height: 120px;
+        
+    }
+    .navbar h1{
+        font-size: 25px;
+        padding: 0px;
+        margin: 0px;
+        text-align: center;
+    }
+    .navbar .nav-item{
+        font-size: 15px ;
+        padding: 3px;
+        margin: 0px;
+        display: block;
+        text-align: center;
+     }
+    .navbar ul{
+        padding: 0px;
+    }
+    .proizvodi{
+        display: block;
+        padding: auto 10px;
+        
+       
+    }
+    .proizvodi .slika{
+
+        height: 350px;
+        width: 70%;
+        display: block;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        
+    
+    }
+    .proizvodi .slika img{
+        height: 250px;
+        width: 250px;
+    }
+    .proizvodi .slika p{
+        text-align: center;
+    }
+}
